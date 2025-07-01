@@ -186,7 +186,7 @@ const VehicleMap = () => {
   const animationRef = useRef();
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/vehicle')
+    axios.get('https://vehicle-proj-backend.onrender.com/api/vehicle')
       .then(res => setFullRoute(res.data))
       .catch(err => console.error('Error fetching route:', err));
   }, []);
