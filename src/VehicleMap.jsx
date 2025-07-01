@@ -198,6 +198,7 @@ const VehicleMap = () => {
     setNoData(filtered.length === 0);
     indexRef.current = 0;
 
+    console.log("hi i am triying");
     if (filtered.length > 1) {
       animateVehicle(filtered);
     } else if (filtered.length === 1) {
